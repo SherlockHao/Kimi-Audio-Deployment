@@ -65,8 +65,14 @@ Kimi-Audio consists of three main components:
 
 ```bash
 git clone https://github.com/MoonshotAI/Kimi-Audio.git
-cd Kimi-Audio
+cd Kimi-Audio-Deployment
 git submodule update --init --recursive
+# CUDA 11.8
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118
+# CUDA 12.6
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu126
+# CUDA 12.8
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
 pip install -r requirements.txt
 ```
 
